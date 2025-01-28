@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Select2 con Bootstrap 4</title>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- CSS de Select2 y tema Bootstrap 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css" rel="stylesheet" />
+
+    <!-- JS de Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+
+    <!-- Campo Select2 múltiple -->
+    <label for="select2-example">Selecciona un estado:</label>
+    <select id="select2-example" class="select2" multiple="multiple" style="width: 100%;">
+        <option value="Alaska">Alaska</option>
+        <option value="California">California</option>
+        <option value="Texas">Texas</option>
+    </select>
+
+    <!-- Inicialización de Select2 -->
+    <script>
+        $(document).ready(function() {
+            $('#select2-example').select2({
+                theme: 'bootstrap4' // Usa el tema Bootstrap 4
+            });
+        });
+    </script>
+
+</body>
+</html>
+
